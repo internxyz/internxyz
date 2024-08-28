@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: 'intern - shitposting for sale',
     description: 'shitposting for sale',
     url: 'https://www.intern.xyz',
-    siteName: 'BlockCMD',
+    siteName: 'intern',
     images: [
       {
         url: '/intern-tbn.png',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'intern - shitposting for sale',
     description: 'shitposting for sale',
-    creator: '@zxstim',
+    creator: '@intern_uwu',
     images: ['/intern-tbn.png'],
   },
 }
