@@ -65,7 +65,7 @@ export default function HomeMainButton() {
       <DrawerTrigger asChild>
         <Button className="flex items-center p-6 w-full">
           <Command />
-          <span className="text-lg md:text-xl">Get Started</span>
+          <span className="text-lg md:text-xl">Join waitlist</span>
         </Button>
       </DrawerTrigger>
       <DrawerContent>
