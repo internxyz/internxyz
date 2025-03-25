@@ -20,9 +20,9 @@ import {
   DrawerFooter,
   DrawerClose,
 } from "@/components/ui/drawer";
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Command } from "lucide-react";
+import Link from "next/link";
 
 export default function HomeMainButton() {
   const isDesktop = useMediaQuery("(min-width: 768px)");
@@ -41,18 +41,12 @@ export default function HomeMainButton() {
           <DialogHeader>
             <DialogTitle>Join waitlist</DialogTitle>
             <DialogDescription>
-              Get early access to the app and be the first to know when it
-              launches.
+              Subscribe to our Telegram channel to get early access to the app and be the first to know when it launches.
             </DialogDescription>
           </DialogHeader>
-          <div className="flex flex-row items-center gap-2">
-            <Input
-              className="w-full"
-              type="email"
-              placeholder="you@example.com"
-            />
-            <Button className="w-fit" type="submit">
-              Join waitlist
+          <div className="flex flex-col gap-2">
+            <Button className="self-end w-fit">
+              <Link target="_blank" href="https://t.me/intern_xyz">Subscribe in Telegram</Link>
             </Button>
           </div>
         </DialogContent>
@@ -72,21 +66,15 @@ export default function HomeMainButton() {
         <DrawerHeader>
           <DrawerTitle>Join waitlist</DrawerTitle>
           <DrawerDescription>
-            Get early access to the app and be the first to know when it
-            launches.
+          Subscribe to our Telegram channel to get early access to the app and be the first to know when it launches.
           </DrawerDescription>
         </DrawerHeader>
         <div className="flex flex-row items-center gap-2 px-4">
-          <Input
-            className="w-full"
-            type="email"
-            placeholder="you@example.com"
-          />
-          <Button className="w-fit" type="submit">
-            Join waitlist
+          <Button className="w-full" type="submit">
+            <Link target="_blank" href="https://t.me/intern_xyz">Subscribe in Telegram</Link>
           </Button>
         </div>
-        <DrawerFooter className="pt-2 mt-8 mb-8">
+        <DrawerFooter className="pt-2 mt-4 mb-8">
           <DrawerClose asChild>
             <Button variant="outline">Close</Button>
           </DrawerClose>

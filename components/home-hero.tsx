@@ -25,7 +25,7 @@ export default function HomeHero() {
 
       {/* Bottom row - Crypto wallet */}
       <div className="flex items-center mt-4">
-        <span className="text-xl md:text-5xl font-bold bg-[#1a1a1a] text-white px-3 pt-2 pb-4 rounded-md transform rotate-[-8deg] inline-block">
+        <span className="text-xl md:text-5xl font-bold bg-[#1a1a1a] text-white px-3 pt-2 pb-2 md:pb-4 rounded-md transform rotate-[-8deg] inline-block">
           Crypto
         </span>
         <span className="text-2xl md:text-5xl font-bold ml-4">wallet</span>
