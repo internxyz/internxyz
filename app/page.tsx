@@ -20,7 +20,7 @@ export default function Home() {
           asChild
           className="flex items-center p-6 w-full"
         >
-          <Link href="https://x.com/intern_uwu">
+          <Link target="_blank" href="https://x.com/intern_uwu">
             <span className="mr-1 text-lg">𝕏</span>
             <span className="text-lg md:text-xl">Follow us</span>
           </Link>
