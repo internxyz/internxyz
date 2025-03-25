@@ -17,6 +17,8 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
+  DrawerFooter,
+  DrawerClose,
 } from "@/components/ui/drawer";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -31,24 +33,27 @@ export default function HomeMainButton() {
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild>
           <Button className="flex items-center p-6 w-full">
-              <Command />
-              <span className="text-lg md:text-xl">Join waitlist</span>
+            <Command />
+            <span className="text-lg md:text-xl">Join waitlist</span>
           </Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
             <DialogTitle>Join waitlist</DialogTitle>
             <DialogDescription>
-              Get early access to the app and be the first to know when it launches.
+              Get early access to the app and be the first to know when it
+              launches.
             </DialogDescription>
           </DialogHeader>
           <div className="flex flex-row items-center gap-2">
-            <Input 
+            <Input
               className="w-full"
-              type="email" 
-              placeholder="you@example.com" 
+              type="email"
+              placeholder="you@example.com"
             />
-            <Button className="w-fit" type="submit">Join waitlist</Button>
+            <Button className="w-fit" type="submit">
+              Join waitlist
+            </Button>
           </div>
         </DialogContent>
       </Dialog>
@@ -65,13 +70,28 @@ export default function HomeMainButton() {
       </DrawerTrigger>
       <DrawerContent>
         <DrawerHeader>
-          <DrawerTitle>Edit profile</DrawerTitle>
+          <DrawerTitle>Join waitlist</DrawerTitle>
           <DrawerDescription>
-            Make changes to your profile here.
+            Get early access to the app and be the first to know when it
+            launches.
           </DrawerDescription>
         </DrawerHeader>
+        <div className="flex flex-row items-center gap-2 px-4">
+          <Input
+            className="w-full"
+            type="email"
+            placeholder="you@example.com"
+          />
+          <Button className="w-fit" type="submit">
+            Join waitlist
+          </Button>
+        </div>
+        <DrawerFooter className="pt-2 mt-8 mb-8">
+          <DrawerClose asChild>
+            <Button variant="outline">Close</Button>
+          </DrawerClose>
+        </DrawerFooter>
       </DrawerContent>
     </Drawer>
   );
 }
-
