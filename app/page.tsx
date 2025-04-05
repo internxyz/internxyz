@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import HomeHero from "@/components/home-hero";
-import HomeMainButton from "@/components/home-main-button";
 
 export default function Home() {
   return (
@@ -14,7 +13,14 @@ export default function Home() {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4 mt-10 w-[200px] md:w-[380px]">
-        <HomeMainButton />
+        <Button
+          asChild
+          className="flex items-center p-6 w-full"
+        >
+          <Link className="text-lg md:text-xl" href="https://app.intern.xyz">
+            Go to wallet
+          </Link>
+        </Button>
         <Button
           variant="secondary"
           asChild
