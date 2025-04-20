@@ -17,8 +17,8 @@ export default function Home() {
           asChild
           className="flex items-center p-6 w-full"
         >
-          <Link className="text-lg md:text-xl" href="https://app.intern.xyz">
-            Go to wallet
+          <Link href="https://app.intern.xyz">
+            <span className="text-lg md:text-xl">Go to app</span>
           </Link>
         </Button>
         <Button
