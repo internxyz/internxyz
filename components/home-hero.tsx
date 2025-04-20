@@ -28,7 +28,7 @@ export default function HomeHero() {
         <span className="text-xl md:text-5xl font-bold bg-[#1a1a1a] text-white px-3 pt-2 pb-2 md:pb-4 rounded-md transform rotate-[-8deg] inline-block">
           Crypto
         </span>
-        <span className="text-2xl md:text-5xl font-bold ml-4">wallet</span>
+        <span className="text-2xl md:text-5xl font-bold ml-4">app</span>
       </div>
     </div>
   );
