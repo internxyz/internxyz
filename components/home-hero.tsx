@@ -5,7 +5,7 @@ export default function HomeHero() {
     <div className="flex flex-col items-center gap-3">
       {/* Top row - Your AI */}
       <div className="flex items-center">
-        <Image className="mr-2 rotate-[-15deg]" src="/logo.svg" alt="Logo" width={50} height={50} />
+        <Image className="mr-2 rotate-[-15deg] rounded-md" src="/logo.svg" alt="Logo" width={50} height={50} />
         <span className="text-2xl md:text-5xl font-bold mr-4">Your</span>
         <span className="text-xl md:text-5xl font-bold bg-[#1a1a1a] text-white px-3 py-2 rounded-md transform rotate-[8deg] inline-block">
           AI Intern
