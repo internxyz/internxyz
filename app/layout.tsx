@@ -53,7 +53,7 @@ export default function RootLayout({
       <Script
         defer
         src="https://analytics.zxstim.com/script.js"
-        data-website-id="8de8a545-024e-4c76-bbca-172bdb0c2020"
+        data-website-id="6b18756c-8b32-4d30-a7bb-ba1eafe42850"
       />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
